@@ -2,19 +2,27 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
+      <router-link to="/profil">Profil</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
-    <router-view/>
+
+    <router-view />
+    
   </div>
 </template>
 
 <style>
+body {
+  background-color: #333;
+  color: azure;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  /* color: #2c3e50; */
 }
 
 nav {
@@ -23,7 +31,8 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: azure;
+  /* color: #2c3e50; */
 }
 
 nav a.router-link-exact-active {
